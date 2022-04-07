@@ -51,4 +51,17 @@ public class CalculatorServiceImpl implements CalculatorService {
         resultSb.append("equals a car run on the way: "+num3+"day"+"\n");
         return resultSb.toString();
     }
+
+    public double calculateThePrompt(String type){
+       log.info("try to find the "+type+" cost");
+       double ans=0;
+       try{
+           ans= emissionMapper.getEmissionByName(type);
+       }
+       catch (Exception e){
+           log.info("can not find this type");
+           return 0;
+       }
+       return ans;
+    }
 }
