@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'FutureDreamTraveler'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4A61AD4EEF744982869F2420B54A9818 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_83CCF49D6B7A4176A0EC56708E5F40B7 }}
           package: '*.jar'
