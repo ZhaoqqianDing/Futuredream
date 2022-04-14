@@ -36,7 +36,7 @@ public class PageController {
     }
     @RequestMapping("/toHomePage")
     public String toHomePage(){
-        return "homepage";
+        return "homePage";
     }
     @RequestMapping("/toQuiz")
     public String toQuiz(){
