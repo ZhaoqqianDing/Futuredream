@@ -34,7 +34,14 @@ public class PageController {
         log.info("enter into calculator");
         return "calculator";
     }
-
+    @RequestMapping("/toHomePage")
+    public String toHomePage(){
+        return "homepage";
+    }
+    @RequestMapping("/toQuiz")
+    public String toQuiz(){
+        return "quiz";
+    }
 //    @RequestMapping("/toMap")
 //    public String map(Model model){
 //        log.info("enter into calculator");

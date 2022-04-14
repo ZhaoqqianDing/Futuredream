@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------------
-    File Name: style.css
+    File Name: my_style.css
 ---------------------------------------------------------------------*/
 
 
@@ -26,7 +26,6 @@
 @import url(font-awesome.min.css);
 @import url(meanmenu.css);
 @import url(owl.carousel.min.css);
-@import url(swiper.min.css);
 @import url(slick.css);
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
@@ -1454,7 +1453,6 @@ margin-bottom: -35px;
 z-index: 999;
 
 }
-}
 
 
 /** download section **/
@@ -1748,29 +1746,71 @@ img.zoom {
 #problem-1 .titlepage h2 {
 	padding: 0px 0px 6px 0px;
 	position: relative;
-	top:0px;
+	top: 0px;
 	left: 0px;
-	font-size: 40px;
+	text-align: start;
+	font-size: 30px;
 	font-weight: bold;
 	color: #050303;
-	line-height: 46px;
-	border-bottom: #fc4311 solid 1px;
-	width: 410px;
+	/* line-height: 46px; */
+	border-bottom: #fa663d solid 1px;
+	width: 350px;
 	margin: 0 0;
 	margin-bottom: 0px;
 	margin-bottom: 20px;
 }
 
+#problem-1 .titlepage p {
+	padding: 0px 0px 6px 0px;
+	height: 110px;
+	margin: 0 0;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+#problem-1 .titlepage img{
+	height: 280px;
+}
+
+#problem-2 .titlepage img{
+	height: 280px;
+}
+
 #problem-2 .titlepage h2 {
+	padding: 0px 0px 6px 0px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #050303;
+	text-align: end;
+	/* line-height: 46px; */
+	border-bottom: #fa663d solid 1px;
+	width: 350px;
+	margin-left: auto;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+#problem-2 .titlepage p {
+	padding: 0px 0px 6px 0px;
+	height: 110px;
+	margin-left: auto;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+.visualization .titlepage_ h2{
 	padding: 0px auto 6px 0px;
 	font-size: 40px;
 	font-weight: bold;
 	color: #050303;
 	line-height: 46px;
 	border-bottom: #fc4311 solid 1px;
-	width: 410px;
+	width: 610px;
+	text-align: center;
 	margin-left: auto;
-	margin-right: 0px;
+	margin-right: auto;
 	margin-bottom: 0px;
 	margin-bottom: 20px;
 }

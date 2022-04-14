@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.futuredreamtraveller.demo.Mapper.QuestionMapper">
+
+    <resultMap id="BaseResultMap" type="com.futuredreamtraveller.demo.Entity.Question">
+        <result column="quizId" jdbcType="VARCHAR" property="index" />
+        <result column="question" jdbcType="VARCHAR" property="question" />
+        <result column="selectionA" jdbcType="VARCHAR" property="selectionA" />
+        <result column="selectionB" jdbcType="VARCHAR" property="selectionB" />
+        <result column="sekectionC" jdbcType="VARCHAR" property="selectionC" />
+        <result column="selectionD" jdbcType="VARCHAR" property="selectionD" />
+        <result column="answer" jdbcType="VARCHAR" property="answer" />
+        <result column="analyzeAns" jdbcType="VARCHAR" property="analyzeAns" />
+
+
+    </resultMap>
+
+
+    <select id="getQuestionByIndex" resultMap="BaseResultMap">
+    select * from quiz where quizId=#{quizId}
+</select>
+
+
+
+</mapper>
